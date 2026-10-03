@@ -96,7 +96,7 @@ const _profiles = new Map([
   easter_face_7cc14027cdafa5f6.sc          77,406 B
   jgutils_fff1fb8343baad24.sc              27,506 B
   player_avatar_frame_badd47a69942c3c6.sc   9,621 B
-  menu_hint_66cc0d8deee3e578.sc             1,250 B</pre><p>a 1.2 MB menu, an autofarm emblem, an easter face, and a 1,250 byte hint. hashed names, in the game's private directory.</p></section><section><h2>the rasp bypass</h2><p>made by net. twelve checks, replaced with a constant.</p><pre>function REPL(off, name, rtype, argtypes, retval) {
+  menu_hint_66cc0d8deee3e578.sc             1,250 B</pre><p>a 1.2 MB menu, an autofarm emblem, an easter face, and a 1,250 byte hint. hashed names, in the game's private directory.</p></section><section><h2>the &quot;&quot;&quot;&quot;&quot;rasp&quot;&quot;&quot;&quot;&quot; bypass</h2><p>made by net. twelve checks, replaced with a constant.</p><pre>function REPL(off, name, rtype, argtypes, retval) {
   var cb = new NativeCallback(function () { return retval; }, rtype, argtypes);
   Interceptor.replace(base.add(off), cb);
 }
